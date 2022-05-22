@@ -50,7 +50,7 @@
 div.gallery {
     border: 1px solid #ccc;
     float: left;
-    width: 46%;
+    width: 48%;
     margin: 5px;
 }
 
@@ -90,14 +90,22 @@ background: #167ac6;
 </head>
 <body>
 
-    <div class="video-selected">
-      <div class="video-iframe">
-<!--Youtube-->
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/watch?v=zvIYUuOonqM&list=PLRdMtWPujrvgfWl1D8HLIvRE5dOY5G51i" title="YouTube video player" width="560"></iframe>
-      </div>
 
-    </div>
-    
+<div class="video-iframe">
+<!--Youtube-->
+<script>
+var Playlist= new Array()
+
+Playlist[0]="<iframe src='https://www.youtube.com/embed/watch?v=ug5cUXZ0Xwg&list=PLCbZRVd26SBk_wdT_93OC0-4pPVj__mfj'></iframe>"
+Playlist[1]="<iframe src='https://www.youtube.com/embed/watch?v=mMKOpi77gSc&list=PLCbZRVd26SBkVL3oOmCXr4SY3swV15AhO&index=1'></iframe>"
+Playlist[2]="<iframe src='https://www.youtube.com/embed/watch?v=eGsbwOv3IQA&list=PLNLCXlSL8_4naP_PI7mndb0Lb8fT3mIHc'></iframe>"
+
+var random=Math.round(3*Math.random());
+
+document.write(Playlist[random]);
+</script>
+ </div>
+
 <a href='https://www.facebook.com/groups/1140808016718536' target='_blank'><div class='btn-fb'>Click Join Group Facebook Now</div></a>
 
 <div class='kv-gallery'>
